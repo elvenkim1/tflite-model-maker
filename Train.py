@@ -14,12 +14,12 @@ logging.set_verbosity(logging.ERROR)
 
 label_map = {1: 'player', 2: 'goalkeeper', 3:'referee', 4: 'ball'} 
 
-train_images_dir = '/content/drive/MyDrive/dataset/trainimage'
-train_annotations_dir = '/content/drive/MyDrive/dataset/trainanno'
-val_images_dir = '/content/drive/MyDrive/dataset/validimage'
-val_annotations_dir = '/content/drive/MyDrive/dataset/validanno'
-test_images_dir = '/content/drive/MyDrive/dataset/testimage'
-test_annotations_dir = '/content/drive/MyDrive/dataset/testanno'
+train_images_dir = '/content/dataset/train_image'
+train_annotations_dir = '/content/dataset/train_label'
+val_images_dir = '/content/dataset/valid_image'
+val_annotations_dir = '/content/dataset/valid_label'
+test_images_dir = '/content/dataset/test_image'
+test_annotations_dir = '/content/dataset/test_label'
 
 train_data = object_detector.DataLoader.from_pascal_voc(
     train_images_dir, train_annotations_dir, label_map=label_map)
